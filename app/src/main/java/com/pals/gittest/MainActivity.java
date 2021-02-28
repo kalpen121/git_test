@@ -5,8 +5,6 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 
-import com.bumptech.glide.Glide;
-
 public class MainActivity extends AppCompatActivity {
 
     private AppCompatImageView img_test;
@@ -21,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Glide.with(MainActivity.this)
-                .load("https://api.androidhive.info/images/sample.jpg")
-                .into(img_test);
+//        Glide.with(MainActivity.this)
+//                .load("https://api.androidhive.info/images/sample.jpg")
+//                .into(img_test);
     }
 }
