@@ -21,8 +21,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Picasso.get().load("https://api.androidhive.info/images/sample.jpg")
-                .into(img_test);
+        try {
+            Picasso.get().load("https://api.androidhive.info/images/sample.jpg")
+                    .into(img_test);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 //        Glide.with(MainActivity.this)
 //                .load("https://api.androidhive.info/images/sample.jpg")
 //                .into(img_test);
