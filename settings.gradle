@@ -1,3 +1,2 @@
-include ':applib'
 include ':app'
 rootProject.name = "Git Test"
